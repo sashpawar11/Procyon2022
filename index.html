@@ -18,10 +18,10 @@
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- sponsorslider --> 
-	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
 
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
@@ -869,53 +869,18 @@
 							-->
 							</div>	
 							
-							<div class="demo-row">
-								
-								<div id="sponsor-carousel" class="carousel slide" data-ride="carousel"> 
-								  <!-- Indicators -->
-								  <ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-								  </ol>
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner" role="listbox">
-									<div class="item active">
-									  <div class="row">
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/nucor-logo.svg" style="width: 200px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-mil.png" style="width: 155px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-timberline.jpg" style="width: 200px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logo-ppg.jpg" style="width: 200px;" /></div>
-										</div>
-									  </div>
-									</div>
-									<div class="item">
-									  <div class="row">
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logos/logo1.jpg" style="width: 160px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logos/logo2.jpg" style="width: 160px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logos/logo3.jpg" style="width: 160px;" /></div>
-										</div>
-										<div class="col-sm-3 col-xs-6">
-										  <div class="sponsor-feature"><img alt="" src="https://itagroup.hs.llnwd.net/o40/csg/pse-demo/channel-incentive/logos/logo4.jpg" style="width: 160px;" /></div>
-										</div>
-									  </div>
-									</div>
-								  </div>
-								</div>
-								</div>
-								</div>
+							<!-- <div class="row">
+								<div class="container">
+								  <section class="logo-carousel slider" data-arrows="true">
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
+									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
+							</div> -->
 							<!-- End spnonsors brand logo -->
 
 						</div>
@@ -4063,11 +4028,29 @@
 
 
 <!-- sponsorslider -->
-
-<script>$$('#sponsor-carousel').carousel({
-	interval: 2000,
-	cycle: true
-  }); </script>
+<!-- 
+<script>$(document).ready(function() {
+	$('.logo-carousel').slick({
+	  slidesToShow: 6,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 1000,
+	  arrows: true,
+	  dots: false,
+	  pauseOnHover: false,
+	  responsive: [{
+		breakpoint: 768,
+		settings: {
+		  slidesToShow: 4
+		}
+	  }, {
+		breakpoint: 520,
+		settings: {
+		  slidesToShow: 2
+		}
+	  }]
+	});
+  });</script> -->
 
 
 
