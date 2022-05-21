@@ -18,11 +18,11 @@
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- sponsorslider --> 
-	<!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="custom.js"></script>
     <!-- Main Style -->
     <link href="style.css" rel="stylesheet">
 
@@ -858,29 +858,55 @@
 							</div>
 
 							<!-- Start spnonsors brand logo -->
-							<div class="mu-sponsors-content">
-								<!--<div class="row">
+							<!-- <div class="mu-sponsors-content">
+								<div class="row">
 									<div class="col-md-2 col-sm-4 col-xs-4">
 										<div class="mu-sponsors-single">
-											<img src="" alt="">
+											<img src="sponsors/brand1.png" alt="">
+										</div>
+									</div>
+									<div class="col-md-2 col-sm-4 col-xs-4">
+										<div class="mu-sponsors-single">
+											<img src="sponsors/brand2.png" alt="">
 										</div>
 									</div>
 								</div>
-							-->
-							</div>	
+						
+							</div>	 -->
+							<div class="container h-100">
+								<div class="row align-items-center h-100">
+								  <div class="container rounded">
+									<br>
+									<div class="slider">
+									  <div class="logos">
+										  
+											<img src="sponsors/brand1.png" alt="">
+											<img src="sponsors/brand2.png" alt="">
+											<img src="sponsors/brand3.png" alt="">
+											<img src="sponsors/brand9.png" alt="">
+											<img src="sponsors/brand4.png" alt="">
+											<img src="sponsors/brand13.png" alt="">
+											<img src="sponsors/brand5.png" alt="">
+											<img src="sponsors/brand6.png" alt="">
+											<img src="sponsors/brand7.png" alt="">
+											<img src="sponsors/brand8.png" alt="">
+											<img src="sponsors/brand10.png" alt="">
+											<img src="sponsors/brand11.png" alt="">
+											<img src="sponsors/brand12.png" alt="">
+											<img src="sponsors/brand15.png" alt="">
+											<img src="sponsors/brand16.png" alt="">
+											<img src="sponsors/brand17.png" alt="">
+											<img src="sponsors/brand14.png" alt="">
+									
+									  </div>
+									  
+									</div>
+								  </div>
+								</div>
+							  
+							  </div>
 							
-							<!-- <div class="row">
-								<div class="container">
-								  <section class="logo-carousel slider" data-arrows="true">
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image1.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image2.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image3.png"></div>
-									<div class="slide"><img src="https://raw.githubusercontent.com/solodev/infinite-logo-carousel/master/images/image4.png"></div>
-							</div> -->
+			
 							<!-- End spnonsors brand logo -->
 
 						</div>
@@ -4028,29 +4054,22 @@
 
 
 <!-- sponsorslider -->
-<!-- 
-<script>$(document).ready(function() {
-	$('.logo-carousel').slick({
-	  slidesToShow: 6,
-	  slidesToScroll: 1,
-	  autoplay: true,
-	  autoplaySpeed: 1000,
-	  arrows: true,
-	  dots: false,
-	  pauseOnHover: false,
-	  responsive: [{
-		breakpoint: 768,
-		settings: {
-		  slidesToShow: 4
-		}
-	  }, {
-		breakpoint: 520,
-		settings: {
-		  slidesToShow: 2
-		}
-	  }]
-	});
-  });</script> -->
+
+<script>$('.brand-carousel').owlCarousel({
+	loop:true,
+	margin:10,
+	autoplay:true,
+	responsive:{
+	  768:{
+		items:5
+	  },
+	
+	  200:{
+		items:3
+	  }
+	}
+  }); 
+  </script> 
 
 
 
