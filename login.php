@@ -31,6 +31,11 @@ if(isset($_POST['login']))
             $_SESSION['username']=$user_name;//here session is used and value of $user_email store in $_SESSION.
 
         }
+        else{
+
+            echo "<script>alert('Email or password or choice is incorrect!')</script>";
+            
+        }
     }
     else if($category=='department-event')
     {
@@ -41,10 +46,13 @@ if(isset($_POST['login']))
           echo "<script>window.open('https://drive.google.com/file/d/10yT9BA_4uVOOuzh8OtcxWIwqz1uO4hnn/view?usp=sharing','_self')</script>";
            $_SESSION['username']=$user_name;
         }
+        else{
+            echo "<script>alert('Email or password or choice is incorrect!')</script>";
+        }
     }
     else
     {
-        echo "<script>alert('Email or password or choice is incorrect!')</script>";
+        echo "<script>alert('Please select a category!')</script>";
         //echo "Sorry";
     }
 }

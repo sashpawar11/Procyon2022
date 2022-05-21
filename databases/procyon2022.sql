@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2022 at 12:23 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.0
+-- Generation Time: May 19, 2022 at 11:49 AM
+-- Server version: 10.1.16-MariaDB
+-- PHP Version: 5.6.24
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -53,7 +52,14 @@ INSERT INTO `crregistration` (`id`, `username`, `password`) VALUES
 (11, 'Gul Ahmed Shaikh', 2021035),
 (12, 'Aires Joe Sousa ', 2112003),
 (13, 'Vadiraj Inamdar', 2014059),
-(14, 'Kuldeep Naik ', 1812079);
+(14, 'Kuldeep Naik ', 1812079),
+(15, 'Pranav Naik', 2114035),
+(16, 'Ajinkya R Naik', 2023006),
+(17, 'Sachi Bokade', 2113016),
+(18, 'Sifan Sayed', 2012038),
+(19, 'Melissa Solomon', 2013014),
+(20, 'Atish Naik Gaonkar', 1813036),
+(21, 'Ashish Humraskar', 1811023);
 
 -- --------------------------------------------------------
 
@@ -104,15 +110,12 @@ ALTER TABLE `deptregistrations`
 -- AUTO_INCREMENT for table `crregistration`
 --
 ALTER TABLE `crregistration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
-
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 --
 -- AUTO_INCREMENT for table `deptregistrations`
 --
 ALTER TABLE `deptregistrations`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-COMMIT;
-
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
