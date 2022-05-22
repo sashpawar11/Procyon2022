@@ -1044,7 +1044,7 @@ src:url(assets/fonts/Full-TiltBoogieNF.ttf);
 .mu-sponsors-area {
 	display: inline;
 	float: left;
-	padding: 100px 0;
+	margin: 40px 15px;
 	width: 100%;
 }
 
@@ -1144,7 +1144,7 @@ src:url(assets/fonts/Full-TiltBoogieNF.ttf);
 .mu-contact-area {
 	display: inline;
 	float: left;
-	padding: 100px 0 50px;
+	margin: 50px 5px;
 	width: 100%;
 }
 
@@ -1802,9 +1802,11 @@ src:url(assets/fonts/Full-TiltBoogieNF.ttf);
 
 .container {
 		overflow: hidden;
+		
 	}
 .slider {
-		  animation: slidein 90s linear infinite;
+		  animation: slidein 30s infinite ;
+		  /* animation-iteration-count: infinite; */
 		  white-space: nowrap;
 }
 		  .logos {
@@ -1813,9 +1815,9 @@ src:url(assets/fonts/Full-TiltBoogieNF.ttf);
 			margin: 0px 0;
 		  }
 			.fab {
-			  width: calc(100% / 5);
-			  animation: fade-in 0.5s 
-				cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+			  width: calc(100% / 3);
+			  animation: fade-in 0.5s
+			  cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
 			}
 			
 		  
